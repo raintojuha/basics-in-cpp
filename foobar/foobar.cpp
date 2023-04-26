@@ -10,14 +10,6 @@
 
 std::string foobar(int i);
 
-int main() {
-    for (int i=1; i < 10; i++){
-        std::cout << foobar(i) << std::endl;
-    }
-
-    return 0;
-}
-
 std::string foobar(int n){
     std::string output;
 
@@ -28,6 +20,14 @@ std::string foobar(int n){
         output += "bar";
     }
     return output;
+}
+
+int main() {
+    for (int i=1; i < 10; i++){
+        std::cout << foobar(i) << std::endl;
+    }
+
+    return 0;
 }
 
 // In this solution I start with an empty string
